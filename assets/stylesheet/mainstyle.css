@@ -1,0 +1,124 @@
+* {
+   box-sizing: border-box;
+}
+
+body {
+   margin-left: 2.71em;
+   margin-top: 2.71em;
+   font-size: 1.15em;
+   color: #2c2c2c;
+}
+
+p {
+   font-family: 'Oswald', sans-serif;
+   font-size: 1em;
+   color: #2c2c2c;
+   letter-spacing: -0.3px;
+}
+
+.bold-text {
+   font-weight: 500;
+}
+
+.medium-text {
+   font-weight: 400;
+}
+
+.orange-text {
+   color: #ab5222;
+}
+
+img {
+   width: 100%;
+   height: auto;
+}
+
+.mt-1 {
+   margin-top: 0.1em;
+   margin-bottom: 0;
+}
+
+.logo-wrapper {
+   width: 8em;
+   margin-left: 0.5em;
+   margin-bottom: 0.7em;
+}
+
+.logo-text-wrapper {
+   padding-left: 1.65em;
+}
+
+.logo-text-wrapper p {
+   color: #ab5222;
+   text-transform: uppercase;
+   font-weight: 500;
+}
+
+.info-address {
+   letter-spacing: -0.1px;
+}
+
+.info-wrapper .info-address .ml {
+   margin-left: 0.15em;
+}
+
+.info-wrapper p {
+   text-transform: uppercase;
+   text-align: justify;
+}
+
+.container, .info-wrapper {
+   width: 39.424em;
+   padding-left: 8.43em;
+   margin: 0;
+}
+
+.text-body p {
+   color: #ab5222;;
+   font-weight: 300;
+   margin-bottom: 1em;
+}
+
+@media all and (max-width: 760px) {
+   body {
+      margin-left: 0.9em;
+      margin-right: 0.9em;
+   }
+
+   .container, .info-wrapper {
+      width: 100%;
+   }
+
+   .info-wrapper .info-address {
+      text-align: initial;
+      word-spacing: 0;
+   }
+}
+
+@media all and (max-width: 580px) {
+   p {
+      font-size: 84%;
+   }
+
+   .logo-wrapper {
+      width: 7em;
+   }
+
+   .container, .info-wrapper {
+      padding-left: 0;
+   }
+
+   .logo-wrapper {
+      margin-left: 0;
+   }
+
+   .logo-text-wrapper {
+      padding-left: 0;
+   }
+}
+
+@media all and (max-width: 490px) {
+   .info-wrapper p span {
+      margin-left: 0;
+  }
+}

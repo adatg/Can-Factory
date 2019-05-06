@@ -6,13 +6,13 @@ body {
    margin-left: 2.71em;
    margin-top: 2.71em;
    font-size: 1.15em;
-   color: #2c2c2c;
+   color: #808080;
 }
 
 p {
    font-family: 'Oswald', sans-serif;
    font-size: 1em;
-   color: #2c2c2c;
+   color: #808080;
    letter-spacing: -0.3px;
 }
 
@@ -25,7 +25,12 @@ p {
 }
 
 .orange-text {
-   color: #ab5222;
+   color: #ff7a33;
+}
+
+.symbol {
+   vertical-align: super;
+   font-size: 0.6em;
 }
 
 img {
@@ -49,13 +54,9 @@ img {
 }
 
 .logo-text-wrapper p {
-   color: #ab5222;
+   color: #ff7a33;
    text-transform: uppercase;
    font-weight: 500;
-}
-
-.info-address {
-   letter-spacing: -0.1px;
 }
 
 .info-wrapper .info-address .ml {
@@ -65,6 +66,7 @@ img {
 .info-wrapper p {
    text-transform: uppercase;
    text-align: justify;
+   font-weight: 400;
 }
 
 .container, .info-wrapper {
@@ -74,7 +76,7 @@ img {
 }
 
 .text-body p {
-   color: #ab5222;;
+   color: #ff7a33;
    font-weight: 300;
    margin-bottom: 1em;
 }

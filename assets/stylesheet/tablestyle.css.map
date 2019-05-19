@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEA,wEAAyE;EACrE,MAAM,EAAE,CAAC;;AAGb,2BAA4B;EACxB,gBAAgB,EAAE,OAAO;;AAG7B,aAAc;EACV,WAAW,ECPA,oBAAoB;EDQ/B,SAAS,EAAE,GAAG;EACd,KAAK,ECXS,OAAO;EDYrB,cAAc,EAAE,MAAM;EACtB,WAAW,EAAE,GAAG;;AAIpB,SAAU;EACN,WAAW,ECdD,GAAG;;ADiBjB,EAAG;EACC,WAAW,ECnBF,GAAG",
+"sources": ["tablestyle.scss","_variables.scss"],
+"names": [],
+"file": "tablestyle.css"
+}

@@ -201,8 +201,6 @@ h3 {
 }
 
 .menu {
-	margin-left: 189px;;
-	/* margin-bottom: 45px; */
 	margin-top: -10px;
 	text-transform: uppercase;
 }
@@ -644,16 +642,6 @@ h3 {
 	margin-left: 3px;
 }
 
-/*FOOTER*/
-
-.footer {
-	margin-left: 190px;
-	margin-right: 190px;
-}
-.footer p, .footer li, .footer a {
-	font-size: 12px;
-	margin-bottom: 10px;
-}
 
 /*RESPONSIVE*/
 

@@ -1,0 +1,20 @@
+.table-bordered, .table-bordered td, .table-bordered th, .table thead th {
+  border: 0; }
+
+.table-hover tbody tr:hover {
+  background-color: initial; }
+
+.th-inner, td {
+  font-family: "Oswald", sans-serif;
+  font-size: 1em;
+  color: #808080;
+  letter-spacing: -0.3px;
+  line-height: 1.5; }
+
+.th-inner {
+  font-weight: 400; }
+
+td {
+  font-weight: 300; }
+
+/*# sourceMappingURL=tablestyle.css.map */

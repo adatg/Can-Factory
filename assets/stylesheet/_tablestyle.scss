@@ -1,0 +1,44 @@
+.table-bordered, .table-bordered td, .table-bordered th, .table thead th {
+    border: 0;
+}
+
+.table-hover tbody tr:hover {
+    background-color: initial;
+}
+
+.th-inner, td {
+    font-family: $primary-font;
+    font-size: 1em;
+    color: $secondary-color;
+    letter-spacing: -0.3px;
+    line-height: 1.5;
+}
+
+.th-inner {
+    font-weight: $medium-font;
+}
+
+td {
+    font-weight: $light-font;
+}
+
+#people {
+    .container_custom {
+        width: 45em;
+        .people-wrapper {
+            display: grid;
+            grid-template-columns: 30% 35% 40%;
+            ul {
+                li {
+                    font-weight: $light-font;
+                }
+            }
+            .names {
+                li {
+                    font-weight: $bold-font;
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,76 @@
+p {
+    font-weight: $light-font;
+}
+
+.container_custom {
+    img {
+        width: 3%;
+    }
+}
+
+.directory {
+    text-transform: uppercase;
+    li {
+        display: inline;
+        margin-right: 10px;
+        &:after {
+            content: "\3E";
+            margin-left: 3px;
+        }
+        a {
+            color: $primary-color;
+        }
+    }
+}
+
+.connect {
+    p {
+        margin-bottom: 0.1em;
+        &:last-of-type {
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+// .location ul li, .transit ul li, .driving ul li, , .history ul li, .services ul li, .projects ul li, .people ul li, .arts ul li, .communication ul li
+.parking ul li, .access ul li {
+    list-style: square;
+    display: list-item;
+    margin-left: 15px;
+    
+}
+
+.location ul li, .parking ul li, .access ul li {
+    font-weight: $light-font;
+}
+
+.address {
+    .bold-text {
+        margin-right: 0.1em;
+    }
+}
+
+.transit {
+    a {
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    span {
+        color: white;
+        display: inline;
+        padding: 0 0.3em;
+        font-size: 0.8em;
+        
+    }
+    .subway-icon {
+        border-radius: 50%;
+    }
+}
+
+.access {
+    img {
+        width: 5%;
+        margin-left: 0.1em;
+    }
+}

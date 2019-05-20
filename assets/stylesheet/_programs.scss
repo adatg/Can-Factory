@@ -10,6 +10,13 @@
 
 #programs {
     h3 {
-        color: #808080;
+        color: $secondary-color;
+        margin-left: -1.4em;
+        margin-top: 1em;
+        &:before {
+            content: '\25AA';
+            color: $primary-color;
+            padding-right: 1.1em;
+        }
     }
 }

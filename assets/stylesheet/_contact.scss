@@ -1,76 +1,70 @@
-p {
-    font-weight: $light-font;
-}
-
-.container_custom {
-    img {
-        width: 3%;
-    }
-}
-
-.directory {
-    text-transform: uppercase;
-    li {
-        display: inline;
-        margin-right: 10px;
-        &:after {
-            content: "\3E";
-            margin-left: 3px;
-        }
-        a {
-            color: $primary-color;
-        }
-    }
-}
-
-.connect {
+#contact {
     p {
+        font-weight: $light-font;
         margin-bottom: 0.1em;
-        &:last-of-type {
-            margin-bottom: 1rem;
+        margin-top: 0.1em;
+    }
+    .container_custom {
+        img {
+            width: 3%;
         }
     }
-}
-
-// .location ul li, .transit ul li, .driving ul li, , .history ul li, .services ul li, .projects ul li, .people ul li, .arts ul li, .communication ul li
-.parking ul li, .access ul li {
-    list-style: square;
-    display: list-item;
-    margin-left: 15px;
+    .connect {
+        p {
+            
+            &:last-of-type {
+                margin-bottom: 1rem;
+            }
+        }
+    }
     
-}
-
-.location ul li, .parking ul li, .access ul li {
-    font-weight: $light-font;
-}
-
-.address {
-    .bold-text {
-        margin-right: 0.1em;
-    }
-}
-
-.transit {
-    a {
-        &:hover {
-            text-decoration: none;
+    // .location ul li, .transit ul li, .driving ul li, , .history ul li, .services ul li, .projects ul li, .people ul li, .arts ul li, .communication ul li
+    .parking ul li, .access ul li, .driving ul li {
+        display: list-item;
+        margin-left: 1em;
+        &:before {
+            content: '\25AA';
+            padding-right: 0.7em;
+            margin-left: -1em;
         }
-    }
-    span {
-        color: white;
-        display: inline;
-        padding: 0 0.3em;
-        font-size: 0.8em;
         
     }
-    .subway-icon {
-        border-radius: 50%;
+    
+    .location ul li, .parking ul li, .access ul li {
+        font-weight: $light-font;
+    }
+
+    .transit ul li, .driving ul li {
+            margin-bottom: 0.5em;
+            margin-top: 1em;
+    }
+    
+    .address {
+        .bold-text {
+            margin-right: 0.1em;
+        }
+    }
+    
+    .transit {
+        a {
+            &:hover {
+                text-decoration: none;
+            }
+        }
+        .subway-icon {
+            border-radius: 50%;
+            color: white;
+            display: inline;
+            padding: 0 0.3em;
+            font-size: 0.8em;
+        }
+    }
+    
+    .access {
+        img {
+            width: 5%;
+            margin-left: 0.1em;
+        }
     }
 }
 
-.access {
-    img {
-        width: 5%;
-        margin-left: 0.1em;
-    }
-}

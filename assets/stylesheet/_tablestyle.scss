@@ -29,6 +29,7 @@ td {
             display: grid;
             grid-template-columns: 30% 35% 40%;
             ul {
+                margin-top: 0.1em;
                 li {
                     font-weight: $light-font;
                 }

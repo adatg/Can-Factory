@@ -1,71 +1,139 @@
-.table-bordered, .table-bordered td, .table-bordered th, .table thead th {
+#people .header.sticky {
+  padding-left: 2.3em; }
+#people .container_custom {
+  width: 45em; }
+
+.table-bordered,
+.table-bordered td,
+.table-bordered th,
+.table thead th {
   border: 0; }
 
 .table-hover tbody tr:hover {
   background-color: initial; }
 
-.th-inner, td {
+.th-inner,
+td {
   font-family: "Oswald", sans-serif;
   font-size: 1em;
   color: #808080;
-  letter-spacing: -0.3px;
+  letter-spacing: -.3px;
   line-height: 1.5; }
 
-.th-inner {
-  font-weight: 400; }
+.bootstrap-table .fixed-table-container .table th,
+.bootstrap-table .fixed-table-container .table td {
+  font-weight: 300;
+  padding-left: 0;
+  padding-top: .15em;
+  padding-bottom: .15em; }
 
-td {
-  font-weight: 300; }
+.bootstrap-table .fixed-table-toolbar .search.float-right {
+  float: left !important;
+  width: 30%; }
+  .bootstrap-table .fixed-table-toolbar .search.float-right .form-control {
+    font-weight: 300; }
+    .bootstrap-table .fixed-table-toolbar .search.float-right .form-control:focus {
+      border-color: #ff7a33;
+      box-shadow: 0 0 0 0.2rem rgba(255, 130, 61, 0.55); }
 
-#people .container_custom {
-  width: 45em; }
-  #people .container_custom .people-wrapper {
-    display: grid;
-    grid-template-columns: 30% 35% 40%; }
-    #people .container_custom .people-wrapper ul {
-      margin-top: 0.1em; }
-      #people .container_custom .people-wrapper ul li {
-        font-weight: 300; }
-    #people .container_custom .people-wrapper .names li {
-      font-weight: 500; }
+.bootstrap-table .fixed-table-container .table thead th .th-inner {
+  font-weight: 400;
+  padding-left: 0;
+  color: #ff7a33;
+  text-transform: uppercase; }
+.bootstrap-table .fixed-table-container .table thead th .both,
+.bootstrap-table .fixed-table-container .table thead th .asc,
+.bootstrap-table .fixed-table-container .table thead th .desc {
+  background-image: none; }
+.bootstrap-table .fixed-table-container .table thead th .both {
+  display: flex; }
+  .bootstrap-table .fixed-table-container .table thead th .both:before, .bootstrap-table .fixed-table-container .table thead th .both:after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #c8c8c8;
+    position: absolute;
+    margin-left: -1em; }
+  .bootstrap-table .fixed-table-container .table thead th .both:before {
+    content: "\f0d8";
+    margin-top: -5px; }
+  .bootstrap-table .fixed-table-container .table thead th .both:after {
+    content: "\f0d7";
+    margin-top: 3px; }
+  .bootstrap-table .fixed-table-container .table thead th .both.asc:after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f0d8";
+    color: #ff7a33;
+    position: absolute;
+    margin-top: -5px;
+    margin-left: -1em; }
+  .bootstrap-table .fixed-table-container .table thead th .both.desc:after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f0d7";
+    color: #ff7a33;
+    position: absolute;
+    margin-top: 3px;
+    margin-left: -1em; }
 
 #contact p {
   font-weight: 300;
   margin-bottom: 0.1em;
   margin-top: 0.1em; }
-#contact .container_custom img {
-  width: 3%; }
-#contact .connect p:last-of-type {
+#contact .container_custom a {
+  color: #ff7a33; }
+
+.section-general p:last-of-type {
   margin-bottom: 1rem; }
-#contact .parking ul li, #contact .access ul li, #contact .driving ul li {
+
+.section-parking ul li,
+.section-access ul li,
+.section-driving ul li {
   display: list-item;
   margin-left: 1em; }
-  #contact .parking ul li:before, #contact .access ul li:before, #contact .driving ul li:before {
-    content: '\25AA';
+  .section-parking ul li:before,
+  .section-access ul li:before,
+  .section-driving ul li:before {
+    content: "\25AA";
     padding-right: 0.7em;
     margin-left: -1em; }
-#contact .location ul li, #contact .parking ul li, #contact .access ul li {
+
+.section-location ul li,
+.section-parking ul li,
+.section-access ul li {
   font-weight: 300; }
-#contact .transit ul li, #contact .driving ul li {
+
+.section-transit ul li,
+.section-driving ul li {
   margin-bottom: 0.5em;
   margin-top: 1em; }
-#contact .address .bold-text {
+
+.section-address .bold-text {
   margin-right: 0.1em; }
-#contact .transit a:hover {
+
+.section-transit a:hover {
   text-decoration: none; }
-#contact .transit .subway-icon {
-  border-radius: 50%;
+.section-transit .transit-icon {
   color: white;
-  display: inline;
-  padding: 0 0.3em;
-  font-size: 0.8em; }
-#contact .access img {
+  font-weight: 500; }
+  .section-transit .transit-icon.subway-icon {
+    border-radius: 50%;
+    display: inline;
+    padding: 0 0.3em;
+    font-size: 0.8em; }
+  .section-transit .transit-icon.bus-icon {
+    font-size: 0.85em;
+    padding: 0 0.25em; }
+
+.section-access img {
   width: 5%;
-  margin-left: 0.1em; }
+  margin-left: 0.1em;
+  vertical-align: bottom; }
 
 .program-wrapper p {
   font-weight: 300;
-  margin-top: 0.1em; }
+  margin-top: 0.1em;
+  margin-bottom: 0.1em; }
   .program-wrapper p a {
     color: #ff7a33; }
 
@@ -97,11 +165,13 @@ img {
   height: auto; }
 
 body {
-  font-size: 1.15em;
+  font-size: 1em;
   color: #808080;
   font-family: "Oswald", sans-serif; }
 
-p, li, a {
+p,
+li,
+a {
   font-family: "Oswald", sans-serif;
   font-size: 1em;
   color: #808080;
@@ -109,7 +179,9 @@ p, li, a {
   line-height: 1.5;
   font-weight: 300; }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: "Oswald", sans-serif;
   font-size: 1em;
   color: #ff7a33;
@@ -150,7 +222,7 @@ ul {
   vertical-align: super;
   font-size: 0.6em; }
 
-.mt-1 {
+.mt1 {
   margin-top: 0.1em;
   margin-bottom: 0; }
 
@@ -163,10 +235,14 @@ ul {
 .ml-0 {
   margin-left: 0 !important; }
 
+.ml1 {
+  margin-left: 1em; }
+
 .top a {
   color: #ff7a33; }
 
-.container_custom, .info-wrapper {
+.container_custom,
+.info-wrapper {
   width: 39.424em;
   margin-left: 10.28em; }
 
@@ -181,13 +257,21 @@ ul {
   background-color: #fff;
   width: 100%;
   top: 0;
-  left: 0; }
+  left: 0;
+  z-index: 1; }
   .header.sticky {
     box-shadow: 0px -6px 17px 0px #8080807d;
     position: fixed;
     margin: 0;
     display: flex;
-    padding-top: 1.71em; }
+    padding-top: 1.71em;
+    padding-left: 2.1em; }
+    .header.sticky img {
+      width: 80%; }
+    .header.sticky .menu-wrapper.aligned {
+      margin-left: 0; }
+    .header.sticky .menu-wrapper .directory {
+      margin-bottom: 0.25em; }
   .header .logo-wrapper {
     width: 8em;
     margin-bottom: 0.7em; }
@@ -209,7 +293,7 @@ ul {
         margin-top: 9px; }
         .header .menu-wrapper .menu ul li {
           font-size: 1em;
-          color: #A6A6A6;
+          color: #a6a6a6;
           display: inline; }
     .header .menu-wrapper .directory {
       text-transform: uppercase;
@@ -217,14 +301,18 @@ ul {
       margin-top: 0.5em; }
       .header .menu-wrapper .directory li {
         display: inline;
-        margin-right: 10px; }
+        margin-right: 10px;
+        font-size: 0.95em; }
         .header .menu-wrapper .directory li:after {
           content: "\3E";
           margin-left: 3px; }
         .header .menu-wrapper .directory li a {
           color: #ff7a33;
           font-size: 0.95em;
-          font-weight: 400; }
+          font-weight: 400;
+          cursor: pointer; }
+          .header .menu-wrapper .directory li a:hover {
+            text-decoration: underline; }
 
 .text-body p {
   color: #ff7a33;
@@ -245,7 +333,8 @@ ul {
     font-size: 0.8em; }
 
 @media all and (max-width: 900px) {
-  #people .container_custom, #people .info-wrapper {
+  #people .container_custom,
+  #people .info-wrapper {
     width: 100%;
     padding-left: 0; }
   #people .container_custom .people-wrapper {
@@ -262,7 +351,8 @@ ul {
     margin-left: 0.9em;
     margin-right: 0.9em; }
 
-  .container_custom, .info-wrapper {
+  .container_custom,
+  .info-wrapper {
     width: 100%;
     padding-left: 0; }
 
@@ -277,16 +367,19 @@ ul {
     .header .menu a:first-child {
       margin-left: 0; }
 
-  #people p, #people li {
+  #people p,
+  #people li {
     font-size: 80%; } }
 @media all and (max-width: 580px) {
-  p, li {
+  p,
+  li {
     font-size: 84%; }
 
   .logo-wrapper {
     width: 7em; }
 
-  .container_custom, .info-wrapper {
+  .container_custom,
+  .info-wrapper {
     padding-left: 0; }
 
   .header .menu {
@@ -297,7 +390,8 @@ ul {
   .logo-text-wrapper {
     padding-left: 0; }
 
-  #people p, #people li {
+  #people p,
+  #people li {
     font-size: 74%; } }
 @media all and (max-width: 490px) {
   .info-wrapper p span {

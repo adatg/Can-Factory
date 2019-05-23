@@ -54,8 +54,8 @@ h3 {
 }
 
 h2 {
-  margin-bottom: 0.5em;
-  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-top: 1.5em;
 }
 
 h3 {
@@ -253,33 +253,34 @@ ul {
 
 // Queries
 @media all and (max-width: 900px) {
-  #people {
-    .container_custom,
-    .info-wrapper {
-      width: 100%;
-      padding-left: 0;
-    }
-    .container_custom {
-      .people-wrapper {
-        grid-template-columns: 30% 30% 40%;
-        display: grid;
-      }
-    }
-    .header {
-      .logo-wrapper {
-        margin-left: 0;
-      }
-      .menu {
-        margin-left: 0;
+  // GRID QUERIES commented out
+  // #people {
+  //   .container_custom,
+  //   .info-wrapper {
+  //     width: 100%;
+  //     padding-left: 0;
+  //   }
+  //   .container_custom {
+  //     .people-wrapper {
+  //       grid-template-columns: 30% 30% 40%;
+  //       display: grid;
+  //     }
+  //   }
+  //   .header {
+  //     .logo-wrapper {
+  //       margin-left: 0;
+  //     }
+  //     .menu {
+  //       margin-left: 0;
 
-        a {
-          &:first-child {
-            margin-left: 0;
-          }
-        }
-      }
-    }
-  }
+  //       a {
+  //         &:first-child {
+  //           margin-left: 0;
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
 }
 
 @media all and (max-width: 800px) {
@@ -289,9 +290,15 @@ ul {
   }
 
   .container_custom,
-  .info-wrapper {
+  .footer,
+  .info-wrapper,
+  .header .menu-wrapper {
     width: 100%;
-    padding-left: 0;
+    margin-left: 0;
+  }
+
+  .container_custom, .footer {
+    padding-left: 2.3em;
   }
 
   .info-wrapper .info-address {
@@ -313,12 +320,12 @@ ul {
       }
     }
   }
-  #people {
-    p,
-    li {
-      font-size: 80%;
-    }
-  }
+  // #people {
+  //   p,
+  //   li {
+  //     font-size: 80%;
+  //   }
+  // }
 }
 
 @media all and (max-width: 580px) {
@@ -332,8 +339,14 @@ ul {
   }
 
   .container_custom,
-  .info-wrapper {
-    padding-left: 0;
+  .footer,
+  .info-wrapper,
+  .header .menu-wrapper {
+    margin-left: 0;
+  }
+
+  .container_custom, .footer {
+    padding-left: 2.3em;
   }
 
   .header {
@@ -349,23 +362,23 @@ ul {
     padding-left: 0;
   }
 
-  #people {
-    p,
-    li {
-      font-size: 74%;
-    }
-  }
+  // #people {
+  //   p,
+  //   li {
+  //     font-size: 74%;
+  //   }
+  // }
 }
 
 @media all and (max-width: 490px) {
   .info-wrapper p span {
     margin-left: 0;
   }
-  #people {
-    .container_custom {
-      .people-wrapper {
-        grid-template-columns: 25% 28% 40%;
-      }
-    }
-  }
+  // #people {
+  //   .container_custom {
+  //     .people-wrapper {
+  //       grid-template-columns: 25% 28% 40%;
+  //     }
+  //   }
+  // }
 }

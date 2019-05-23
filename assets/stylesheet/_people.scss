@@ -38,6 +38,11 @@ td {
     padding-top: .15em;
     padding-bottom: .15em;
   }
+  td {
+    &:first-of-type {
+      font-weight: $bold-font;
+    }
+  }
 }
 
 .bootstrap-table .fixed-table-toolbar .search {

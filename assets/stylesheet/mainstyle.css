@@ -26,6 +26,8 @@ td {
   padding-left: 0;
   padding-top: .15em;
   padding-bottom: .15em; }
+.bootstrap-table .fixed-table-container .table td:first-of-type {
+  font-weight: 500; }
 
 .bootstrap-table .fixed-table-toolbar .search.float-right {
   float: left !important;
@@ -191,8 +193,8 @@ h3 {
   text-transform: uppercase; }
 
 h2 {
-  margin-bottom: 0.5em;
-  margin-top: 1em; }
+  margin-bottom: 1em;
+  margin-top: 1.5em; }
 
 h3 {
   margin-bottom: 0.25em;
@@ -332,29 +334,20 @@ ul {
     font-weight: 300;
     font-size: 0.8em; }
 
-@media all and (max-width: 900px) {
-  #people .container_custom,
-  #people .info-wrapper {
-    width: 100%;
-    padding-left: 0; }
-  #people .container_custom .people-wrapper {
-    grid-template-columns: 30% 30% 40%;
-    display: grid; }
-  #people .header .logo-wrapper {
-    margin-left: 0; }
-  #people .header .menu {
-    margin-left: 0; }
-    #people .header .menu a:first-child {
-      margin-left: 0; } }
 @media all and (max-width: 800px) {
   body {
     margin-left: 0.9em;
     margin-right: 0.9em; }
 
   .container_custom,
-  .info-wrapper {
+  .footer,
+  .info-wrapper,
+  .header .menu-wrapper {
     width: 100%;
-    padding-left: 0; }
+    margin-left: 0; }
+
+  .container_custom, .footer {
+    padding-left: 2.3em; }
 
   .info-wrapper .info-address {
     text-align: initial;
@@ -365,11 +358,7 @@ ul {
   .header .menu {
     margin-left: 0; }
     .header .menu a:first-child {
-      margin-left: 0; }
-
-  #people p,
-  #people li {
-    font-size: 80%; } }
+      margin-left: 0; } }
 @media all and (max-width: 580px) {
   p,
   li {
@@ -379,8 +368,13 @@ ul {
     width: 7em; }
 
   .container_custom,
-  .info-wrapper {
-    padding-left: 0; }
+  .footer,
+  .info-wrapper,
+  .header .menu-wrapper {
+    margin-left: 0; }
+
+  .container_custom, .footer {
+    padding-left: 2.3em; }
 
   .header .menu {
     margin-left: 0em; }
@@ -388,16 +382,9 @@ ul {
     margin-left: 0; }
 
   .logo-text-wrapper {
-    padding-left: 0; }
-
-  #people p,
-  #people li {
-    font-size: 74%; } }
+    padding-left: 0; } }
 @media all and (max-width: 490px) {
   .info-wrapper p span {
-    margin-left: 0; }
-
-  #people .container_custom .people-wrapper {
-    grid-template-columns: 25% 28% 40%; } }
+    margin-left: 0; } }
 
 /*# sourceMappingURL=mainstyle.css.map */

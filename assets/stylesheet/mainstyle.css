@@ -17,15 +17,15 @@ td {
   font-family: "Oswald", sans-serif;
   font-size: 1em;
   color: #808080;
-  letter-spacing: -.3px;
+  letter-spacing: -0.3px;
   line-height: 1.5; }
 
 .bootstrap-table .fixed-table-container .table th,
 .bootstrap-table .fixed-table-container .table td {
   font-weight: 300;
   padding-left: 0;
-  padding-top: .15em;
-  padding-bottom: .15em; }
+  padding-top: 0.15em;
+  padding-bottom: 0.15em; }
 .bootstrap-table .fixed-table-container .table td:first-of-type {
   font-weight: 500; }
 
@@ -77,6 +77,20 @@ td {
     position: absolute;
     margin-top: 3px;
     margin-left: -1em; }
+
+.container_custom .people-wrapper.grid {
+  display: grid;
+  grid-template-columns: 21% 13% 40%; }
+  .container_custom .people-wrapper.grid h3 {
+    font-weight: 400;
+    padding-bottom: .75rem; }
+  .container_custom .people-wrapper.grid ul {
+    margin-top: 0.1em;
+    margin-bottom: 0; }
+    .container_custom .people-wrapper.grid ul li {
+      font-weight: 300; }
+  .container_custom .people-wrapper.grid .names li {
+    font-weight: 500; }
 
 #contact p {
   font-weight: 300;
@@ -144,7 +158,7 @@ td {
   margin-left: -1.4em;
   margin-top: 1em; }
   #programs h3:before {
-    content: '\25AA';
+    content: "\25AA";
     color: #ff7a33;
     padding-right: 1.1em; }
 
@@ -193,7 +207,7 @@ h3 {
   text-transform: uppercase; }
 
 h2 {
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
   margin-top: 1.5em; }
 
 h3 {
@@ -242,6 +256,9 @@ ul {
 
 .top a {
   color: #ff7a33; }
+
+.empty {
+  opacity: 0; }
 
 .container_custom,
 .info-wrapper {
@@ -334,6 +351,10 @@ ul {
     font-weight: 300;
     font-size: 0.8em; }
 
+@media all and (max-width: 900px) {
+  .container_custom .people-wrapper.grid {
+    grid-template-columns: 30% 30% 40%;
+    display: grid; } }
 @media all and (max-width: 800px) {
   body {
     margin-left: 0.9em;
@@ -346,7 +367,8 @@ ul {
     width: 100%;
     margin-left: 0; }
 
-  .container_custom, .footer {
+  .container_custom,
+  .footer {
     padding-left: 2.3em; }
 
   .info-wrapper .info-address {
@@ -358,7 +380,11 @@ ul {
   .header .menu {
     margin-left: 0; }
     .header .menu a:first-child {
-      margin-left: 0; } }
+      margin-left: 0; }
+
+  .people-wrapper.grid p,
+  .people-wrapper.grid li {
+    font-size: 80%; } }
 @media all and (max-width: 580px) {
   p,
   li {
@@ -373,7 +399,8 @@ ul {
   .header .menu-wrapper {
     margin-left: 0; }
 
-  .container_custom, .footer {
+  .container_custom,
+  .footer {
     padding-left: 2.3em; }
 
   .header .menu {
@@ -382,9 +409,16 @@ ul {
     margin-left: 0; }
 
   .logo-text-wrapper {
-    padding-left: 0; } }
+    padding-left: 0; }
+
+  .people-wrapper.grid p,
+  .people-wrapper.grid li {
+    font-size: 74%; } }
 @media all and (max-width: 490px) {
   .info-wrapper p span {
-    margin-left: 0; } }
+    margin-left: 0; }
+
+  .container_custom .people-wrapper.grid {
+    grid-template-columns: 25% 28% 40%; } }
 
 /*# sourceMappingURL=mainstyle.css.map */

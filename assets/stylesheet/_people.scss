@@ -26,7 +26,7 @@ td {
   font-family: $primary-font;
   font-size: 1em;
   color: $secondary-color;
-  letter-spacing: -.3px;
+  letter-spacing: -0.3px;
   line-height: 1.5;
 }
 
@@ -35,8 +35,8 @@ td {
   td {
     font-weight: $light-font;
     padding-left: 0;
-    padding-top: .15em;
-    padding-bottom: .15em;
+    padding-top: 0.15em;
+    padding-bottom: 0.15em;
   }
   td {
     &:first-of-type {
@@ -53,7 +53,7 @@ td {
       font-weight: $light-font;
       &:focus {
         border-color: $primary-color;
-        box-shadow: 0 0 0 .2rem rgba(255, 130, 61, 0.55);
+        box-shadow: 0 0 0 0.2rem rgba(255, 130, 61, 0.55);
       }
     }
   }
@@ -115,22 +115,26 @@ td {
 
 // NO TABLE SORTING VERSION. JUST SIMPLE GRID
 
-// #people {
-//   .container_custom {
-//     .people-wrapper {
-//       display: grid;
-//       grid-template-columns: 30% 35% 40%;
-//       ul {
-//         margin-top: 0.1em;
-//         li {
-//           font-weight: $light-font;
-//         }
-//       }
-//       .names {
-//         li {
-//           font-weight: $bold-font;
-//         }
-//       }
-//     }
-//   }
-// }
+.container_custom {
+  .people-wrapper.grid {
+    display: grid;
+    grid-template-columns: 21% 13% 40%;
+    h3 {
+      font-weight: $medium-font;
+      padding-bottom: .75rem;
+    }
+    ul {
+      margin-top: 0.1em;
+      margin-bottom: 0;
+      li {
+        font-weight: $light-font;
+      }
+    }
+    .names {
+      li {
+        font-weight: $bold-font;
+      }
+    }
+  }
+}
+

@@ -135,7 +135,7 @@ ul {
 
 .container_custom {
   &.padding {
-    padding-top: 16em;
+    padding-top: 320px;
   }
 }
 
@@ -225,6 +225,19 @@ ul {
   }
 }
 
+#profile {
+  .header {
+    &.sticky {
+      position: initial;
+    }
+  }
+  .container_custom {
+    &.padding {
+      padding-top: initial;
+    }
+  }
+}
+
 .text-body {
   p {
     color: $primary-color;
@@ -287,6 +300,30 @@ ul {
   }
 }
 
+@media all and (min-width: 2000px) {
+  #people {
+    .container_custom {
+      max-width: 45%;
+    }
+  }
+}
+
+@media all and (min-width: 1400px) {
+  #people {
+    .container_custom {
+      width: calc(100vw - 40%);
+    }
+  }
+}
+
+@media all and (max-width: 1000px) {
+  #people {
+    .container_custom {
+      width: calc(100vw - 20%);
+    }
+  }
+}
+
 @media all and (max-width: 800px) {
   body {
     margin-left: 0.9em;
@@ -297,7 +334,7 @@ ul {
   .footer,
   .info-wrapper,
   .header .menu-wrapper {
-    width: 100%;
+    width: 100% !important;
     margin-left: 0;
   }
 

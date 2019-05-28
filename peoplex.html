@@ -10,7 +10,6 @@
     content="The Old American Can Factory is an historic, six-building, 130,000 sq ft industrial complex on the Gowanus Canal in Brooklyn.">
   <meta name="keywords" content="xo projects, the old american can factory" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <!-- FAVICON -->
   <link rel="manifest" href="/manifest.json">
 
@@ -32,7 +31,7 @@
 
 </head>
 
-<body id="programs" class="sticky_header">
+<body id="people" class="sticky_header">
   <div class="header">
     <div class="logo-wrapper"><a href="index.html"><img src="oac_logo.jpg" alt="The Old American Can Factory Logo"
           style="display: block;"></a> </div>
@@ -40,62 +39,37 @@
       <div class="menu">
         <ul>
           <li><a class="ml-0" href="index.html">PROFILE</a></li>
-          <li>: <a href="people.html">PEOPLE</a></li>
-          <li>: <a class="active" href="programs.html">PROGRAMS</a></li>
+          <li>: <a class="active" href="people.html">PEOPLE</a></li>
+          <li>: <a href="programs.html">PROGRAMS</a></li>
           <li>: <a href="contact.html">CONTACT</a></li>
         </ul>
       </div>
       <ul class="directory">
-        <li><a target="_self" data-scroll-to="#factory" data-scroll-speed="700" data-scroll-offset="-100">At the Can
-            Factory</a></li>
-        <li><a target="_self" data-scroll-to="#offsite" data-scroll-speed="700" data-scroll-offset="-100">Tenant events
-            off site</a></li>
+        <li><a target="_self" data-scroll-to="#tenants" data-scroll-speed="700" data-scroll-offset="-100">Current
+            Tenants</a></li>
+        <li><a href="alumni.html">Alumni Tenants</a></li>
       </ul>
     </div>
   </div>
 
-  <div class="container_custom" id="waypoint-trigger">
+  <div class="container_custom" id='waypoint-trigger'>
     <div class="wrapper">
-      <h2 id="factory">At the Can Factory</h2>
-      <!-- <div class="program-wrapper">
-        <h3>Changeling Concert Series</h3>
-        <p><span class="italic-text">Lava + Boxcutter Collective + Robin Frohardt</span> | Thu <span
-            class="bold-text">23 May 2019 </span> </p>
-        <p>Doors 7:30p | Show 8p | Public $15/ Can Factory Workers $5 Cash Only </p>
-        <p>RSVP to: <a href="mailto:info@brooklynlutherie.com?subject=RSVP">info@brooklynlutherie.com</a> </p>
-      </div> -->
-      <div class="program-wrapper">
-        <h3>Ortega Y Gasset Gallery</h3>
-        <p><span class="italic-text">Ghost Stories</span> | Entrance at 383 3rd Avenue | Closing <span
-            class="bold-text">9 Jun 2019 </span> </p>
-        <p>Info: <a
-            href="https://xoprojects.us7.list-manage.com/track/click?u=231b310a4e13357274dd28a20&id=7d67592476&e=b85036c189"
-            target="_blank">https://www.oygprojects.com/upcoming/</a> </p>
+      <h2 id="tenants" class="title">People working at the Can Factory</h2>
+      <p>Please click on arrows to view by name, organization or discipline.</p>
+      <div class="people-wrapper">
+        <table data-toggle="table"  data-url="tenants.json" table-hover="false" data-search="true">
+          <thead>
+            <tr>
+              <th data-sortable='true'><span>Name</span></th>
+              <th data-sortable='true'><span>Organization</span></th>
+              <th data-sortable='true'><span>Discipline</span></th>
+              <th><span>Website</span></th>
+            </tr>
+          </thead>
+          
+        </table>
       </div>
-      <div class="program-wrapper">
-        <h3>SHARE</h3>
-        <p>The Dining Room (D101) | <span class="bold-text">Every fourth Sunday</span> | Between <span
-            class="bold-text">8p-12midnight </span> </p>
-        <p>Info: <a
-            href="https://xoprojects.us7.list-manage.com/track/click?u=231b310a4e13357274dd28a20&id=ed9c631198&e=b85036c189"
-            target="_blank">http://share.dj/share/ </a> </p>
-      </div>
-      <h2 id="offsite">Tenant events off site</h2>
-      <div class="program-wrapper">
-        <h3>Nancy Manter </h3>
-        <p><span class="text-italic">As Above, So Below </span>| 165 Second Street, Brooklyn</p>
-        <p><span class="bold-text">An Exhibition at the Gowanus Dredgers Boathouse</span> | thru <span
-            class="bold-text">15 Jun, 2019</span> </p>
-        <p>Info: <a
-            href="https://xoprojects.us7.list-manage.com/track/click?u=231b310a4e13357274dd28a20&id=3d88e89721&e=b85036c189"
-            target="_blank">http://www.nancymanter.com/ </a> </p>
-      </div>
-      <div class="program-wrapper">
-        <h3>Ugly Duckling Presse</h3>
-        <p>Info: <a
-            href="https://xoprojects.us7.list-manage.com/track/click?u=231b310a4e13357274dd28a20&id=9689982da4&e=b85036c189"
-            target="_blank">Ugly Duckling Presse</a> </p>
-      </div>
+
     </div>
   </div>
   <div class="footer">
@@ -116,11 +90,8 @@
     integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
     crossorigin="anonymous"></script>
   <script src="https://unpkg.com/bootstrap-table@1.14.2/dist/bootstrap-table.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="assets/plugins/jquery.waypoints.min.js"></script>
   <script src="assets/plugins/script.js"></script>
-
 </body>
 
 </html>

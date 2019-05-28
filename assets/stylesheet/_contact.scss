@@ -1,8 +1,8 @@
 #contact {
   p {
     font-weight: $light-font;
-    margin-bottom: 0.1em;
-    margin-top: 0.1em;
+    margin-bottom: .1em;
+    margin-top: .1em;
   }
   .container_custom {
     a {
@@ -27,7 +27,7 @@
   margin-left: 1em;
   &:before {
     content: "\25AA";
-    padding-right: 0.7em;
+    padding-right: .7em;
     margin-left: -1em;
   }
 }
@@ -40,13 +40,13 @@
 
 .section-transit ul li,
 .section-driving ul li {
-  margin-bottom: 0.5em;
+  margin-bottom: .5em;
   margin-top: 1em;
 }
 
 .section-address {
   .bold-text {
-    margin-right: 0.1em;
+    margin-right: .1em;
   }
 }
 
@@ -62,12 +62,12 @@
     &.subway-icon {
       border-radius: 50%;
       display: inline;
-      padding: 0 0.3em;
-      font-size: 0.8em;
+      padding: 0 .3em;
+      font-size: .8em;
     }
     &.bus-icon {
-      font-size: 0.85em;
-      padding: 0 0.25em;
+      font-size: .85em;
+      padding: 0 .25em;
     }
   }
 }
@@ -75,7 +75,22 @@
 .section-access {
   img {
     width: 5%;
-    margin-left: 0.1em;
+    margin-left: .1em;
     vertical-align: bottom;
+  }
+}
+
+.section-staff {
+  .person-wrapper {
+    h3 {
+      margin-top: 1.5em;
+      font-weight: $medium-font;
+    }
+    p {
+      font-weight: $bold-font !important;
+      a {
+        font-weight: $light-font;
+      }
+    }
   }
 }

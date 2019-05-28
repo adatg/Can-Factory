@@ -1,14 +1,25 @@
 
-
-make the site smaller on big screen
-
 titles closer on people
 
 
+<td> | <a href="http:// | " | target="_blank"> | text | </a> </td>
 
 
 
-people working at the can facotyr
 
-pleoase click on arrow to virew by name, org or discipline
+
+
+switch staff - discp first then names
+
+remove waypoint trigger from profile page and update script
+
+add TOP 
+
+change profile to gray but leave indutriana
+
+less space under staff
+
+research adding another section 
+
+
 

@@ -20,4 +20,9 @@
       padding-right: 1.1em;
     }
   }
+  .container_custom{
+    &.padding {
+      padding-top: 264px;
+    }
+  }
 }
